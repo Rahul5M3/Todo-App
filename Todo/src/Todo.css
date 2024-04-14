@@ -1,0 +1,37 @@
+.Todo {
+    height: 80vh;
+    width: 600px;
+    /* background-color: aliceblue; */
+    border: 1px solid white;
+    /* border-bottom: none; */
+}
+
+h2 {
+    color: white;
+    font-size: 40px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    /* background-color: #66CDAA; */
+    background-color: #00573F;
+    transform: scale(1.02);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.addBtn {
+    position: absolute;
+    bottom: 120px;
+    right: 330px;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    transition: transform 0.6s linear;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addBtn:hover {
+    background-color: green;
+    color: white;
+    transform: scale(1.2);
+}

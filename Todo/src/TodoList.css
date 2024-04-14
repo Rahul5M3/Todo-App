@@ -1,0 +1,45 @@
+.TodoList {
+    background-color: inherit;
+    height: 70%;
+    width: 100%;
+    /* padding: 1rem; */
+    /* overflow-y: scroll; */
+}
+
+
+.headings {
+    display: flex;
+    color: black;
+    justify-content: center;
+    align-items: center;
+}
+
+.headings div {
+    flex: 1;
+    color: white;
+    opacity: 0.6;
+    transition: transform 0.6s ease;
+    cursor: pointer;
+}
+
+.headings div:hover {
+    opacity: 1;
+    transform: scale(1.1);
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+}
+
+.boxing {
+    border-top: 1px solid black;
+    width: 97.4%;
+    height: 91%;
+    overflow-y: scroll;
+    background-color: inherit;
+    margin-top: 1.6rem;
+    padding-left: 1rem;
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+  }
