@@ -6,8 +6,8 @@ export default function TodoList({todos,trigger,donetask}){
         <div className="TodoList">
             <div className='headings'>
                 <div>Task</div>
-                <div>Delete Task</div>
                 <div>Mark Task</div>
+                <div>Delete Task</div>
             </div>
             <div className='boxing'>
                 {

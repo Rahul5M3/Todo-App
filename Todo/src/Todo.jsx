@@ -4,10 +4,11 @@ import AddIcon from '@mui/icons-material/Add';
 import TodoInput from './TodoInput';
 import { useState } from 'react';
 import TodoList from './TodoList';
+import HourglassDisabledIcon from '@mui/icons-material/HourglassDisabled';
 
 export default function Todo(){
     let [addBtnClicked,setAddBtnClicked]=useState(false);
-    let [todos,setTodos]=useState([{id:"123",task:'sleep',isDone:false}]);
+    let [todos,setTodos]=useState([]);
 
     function addTasktoTodos(task,id){
         setTodos(()=>{
@@ -37,7 +38,8 @@ export default function Todo(){
         <div className="Todo">
             <h2>Todo App</h2>
             <TodoInput list={addTasktoTodos} visible={addBtnClicked}></TodoInput>
-            <TodoList donetask={markTheTaskDone} trigger={deleteTaskfromTodo} todos={todos}></TodoList>
+            {todos.length===0 ?  <HourglassDisabledIcon style={{fontSize:'200px', position:'relative', top:'80px'}}></HourglassDisabledIcon> :
+            <TodoList donetask={markTheTaskDone} trigger={deleteTaskfromTodo} todos={todos}></TodoList> }
             <button onClick={clickingAddbtn} className='addBtn'><AddIcon style={{fontSize:'26px'}}></AddIcon></button>
         </div>
     );
